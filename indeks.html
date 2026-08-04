@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modern Personal Data Dashboard</title>
+        <!-- FontAwesome untuk Ikon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet">
+        <!-- Menghubungkan ke file CSS Eksternal -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-icon"><i class="fa-solid fa-shapes"></i></div>
+                <h2>Biodata</h2>
+            </div>
+            <ul class="nav-links">
+                <li class="active"><a href="#"><i class="fa-solid fa-house"></i> <span>Dashboard</span></a></li>
+                <li><a href="#"><i class="fa-solid fa-address-card"></i> <span>Profil</span></a></li>
+                <li><a href="#"><i class="fa-solid fa-file-lines"></i> <span>Biodata</span></a></li>
+                <li><a href="#"><i class="fa-solid fa-gear"></i> <span>Pengaturan</span></a></li>
+            </ul>
+            <div class="logout">
+                <a href="#" class="logout-link"><i class="fa-solid fa-right-from-bracket"></i> <span>Logout</span></a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="topbar">
+                <div>
+                    <p class="greeting">Selamat datang kembali,</p>
+                    <h1>Dasbor Data Diri</h1>
+                </div>
+                <div class="user-info">
+                    <span>Muhammad Ammar Naufal</span>
+                    <div class="avatar">
+                        <img src="https://cdn.phototourl.com/free/2026-08-04-7450040c-b304-4601-96d9-7e474379387b.jpg"
+                            alt="Avatar">
+                    </div>
+                </div>
+            </header>
+
+            <!-- Stats Grid -->
+            <section class="stats-grid">
+                <div class="card stat-card">
+                    <div class="card-icon"><i class="fa-solid fa-user"></i></div>
+                    <div class="stat-info">
+                        <p>Profil</p>
+                        <h3>1</h3>
+                    </div>
+                </div>
+                <div class="card stat-card">
+                    <div class="card-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="stat-info">
+                        <p>Email Terhubung</p>
+                        <h3>1</h3>
+                    </div>
+                </div>
+                <div class="card stat-card">
+                    <div class="card-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="stat-info">
+                        <p>Kontak Aktif</p>
+                        <h3>1</h3>
+                    </div>
+                </div>
+                <div class="card stat-card">
+                    <div class="card-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="stat-info">
+                        <p>Alamat Disimpan</p>
+                        <h3>1</h3>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bottom Section -->
+            <section class="content-bottom">
+                <!-- Form Card -->
+                <div class="card section-card">
+                    <h2>Formulir Data Diri</h2>
+                    <form>
+                        <div class="form-group">
+                            <label>Nama Lengkap</label>
+                            <input type="text" placeholder="Masukkan nama..." value="Muhammad Ammar Naufal"
+                                class="input-field">
+                        </div>
+                        <div class="form-group">
+                            <label>NIM</label>
+                            <input type="text" placeholder="Masukkan NIM..." class="input-field">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="contoh@email.com" class="input-field">
+                        </div>
+                        <div class="form-group">
+                            <label>Nomor HP</label>
+                            <input type="text" placeholder="08xx xxxx xxxx" class="input-field">
+                        </div>
+                        <div class="form-group">
+                            <label>Alamat Lengkap</label>
+                            <input type="text" placeholder="Masukkan alamat..." class="input-field">
+                        </div>
+                        <button type="submit" class="btn-submit">Simpan Perubahan</button>
+                    </form>
+                </div>
+
+                <!-- Table Card -->
+                <div class="card section-card">
+                    <div class="table-header">
+                        <h2>Data Mahasiswa</h2>
+                        <button class="btn-outline"><i class="fa-solid fa-download"></i> Unduh PDF</button>
+                    </div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nama Lengkap</th>
+                                    <th>NIM</th>
+                                    <th>Kelas</th>
+                                    <th>Email</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="td-user">
+                                            <div class="td-avatar">M</div>
+                                            <span>Muhammad Ammar Naufal</span>
+                                        </div>
+                                    </td>
+                                    <td>241234567</td>
+                                    <td><span class="badge">XI-RPL2</span></td>
+                                    <td>ammarnaufal373@email.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </body>
+
+</html>
